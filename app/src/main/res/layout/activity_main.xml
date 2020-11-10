@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/heading"
+        android:textAlignment="center"
+        android:text="Music Player"
+        android:textColor="#000"
+        android:textSize="35dp"
+         />
+
+    <Button
+    android:id="@+id/play"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_below="@+id/heading"
+    android:layout_marginTop="25dp"
+        android:background="@drawable/play"
+    android:textSize="25dp" />
+    <Button
+        android:id="@+id/pause"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/play"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/pause"
+        android:textSize="25dp" />
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/pause"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/stop"
+        android:textSize="25dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="235dp"
+        android:layout_height="234dp"
+        android:layout_below="@id/heading"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:layout_toRightOf="@id/play"
+        app:srcCompat="@drawable/music" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:text="Status"
+        />
+
+    <SeekBar
+    android:id="@+id/seekVol"
+    android:layout_width="327dp"
+    android:layout_height="50dp"
+    android:layout_below="@id/seekProg"
+    android:layout_marginTop="30dp"
+    android:layout_centerHorizontal="true"/>
+    <SeekBar
+        android:id="@+id/seekProg"
+        android:layout_width="327dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/status"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>
